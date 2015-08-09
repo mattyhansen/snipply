@@ -1,0 +1,142 @@
+
+
+.main {
+  width:450px;
+  margin: 0px auto;
+  padding: 10px;
+  background: #303030;
+}
+
+.layout-detail {
+  width:650px;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+
+/* Snippet List Styles */
+
+.snippetlist {
+  /*background: #a6a195;*/
+  background: #cec8b9;
+
+  margin: 0px;
+  padding: 0px;
+  /*width: 50%;*/
+  /*min-width: 290px;*/
+  /*max-width:350px;*/
+  /*margin: 0 auto;*/
+  /*margin-bottom: 30px;*/
+  /*border-radius: 0 0 20px 20px;*/
+  /*opacity: .95;*/
+  /*z-index: 10;*/
+
+}
+
+.snippetlist ul {
+  margin: 0;
+  padding: 0;
+
+
+}
+
+.snippetlist li {
+  margin: 0;
+  padding: 10px 10px 10px 20px;
+  /*border-bottom: 1px dotted black;*/
+  opacity: 0.9;
+  list-style: none;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.snippetlist a {
+  display: block;
+  text-decoration: none;
+}
+
+.snippetlist li:hover {
+  /*background: #FDF6E3;*/
+  background: #cec8b9;
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.snippet img {
+  display: block;
+  float: left;
+  width: 60px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/*.snippet .info {*/
+  /*display: block;*/
+  /*float: left;*/
+  /*padding-left: 120px !important;*/
+/*}*/
+
+.snippet:last-child {
+  border-bottom:none;
+}
+
+.snippetinfo {
+  font-size: 1.1em;
+  line-height: 160%;
+  background: #EEE8D5;
+  color: #0F4150;
+  width: 90%;
+  min-width: 520px;
+  max-width: 720px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  z-index: 20;
+}
+
+.snippetinfo h1{
+  font-size: 1.8em;
+  margin: 0px;
+  padding:0px;
+}
+
+.snippetinfo img {
+  width: 40%;
+  max-width: 130px;
+  border-radius: 20px;
+}
+
+
+.snippet.ng-enter.ng-enter-active, .snippet.ng-leave {
+  opacity: 1;
+  height: 80px;
+  overflow: hidden;
+}
+
+.snippet.ng-leave.ng-leave-active, .snippet.ng-enter {
+  opacity: 0;
+  height: 0px;
+  overflow: hidden;
+}
+
+
+
+
+/* button group */
+.button-group {
+  float:right;
+}
+

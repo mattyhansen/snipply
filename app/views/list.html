@@ -1,0 +1,41 @@
+<section class="snippetpage">
+  <div class="search">
+    <h1>Snipply.io</h1>
+
+    <div class="form-group">
+      <label>search: </label>
+      <input ng-model="query" placeholder="Search for snippets" autofocus="autofocus" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+      <label>by:
+        <select ng-model="snippetOrder" class="form-control">
+          <option value="title">Title</option>
+          <option value="description">Description</option>
+        </select>
+      </label>
+
+      <div class="button-group">
+        <label>order:</label><br/>
+          <button class="btn btn-{{ ascendingClass }}"  type="button" ng-model="direction" name="direction"
+                  ng-click="direction='';ascendingClass='success';descendingClass='primary'">ascending</button>
+
+          <button class="btn btn-{{ descendingClass }}" type="button" ng-model="direction" name="direction"
+                  ng-click="direction='reverse';ascendingClass='primary';descendingClass='success'">descending</button>
+        </label>
+      </div>
+  </div>
+
+  <ul class="snippetlist" ng-show="10">
+    <li ng-animate="'animate'" class="snippet cf" ng-repeat="item in snippets | filter: query | orderBy: snippetOrder:direction">
+      <a href="#/details/{{ snippets.indexOf(item) }}">
+        <img ng-src="app/images/category-{{ item.category }}.png" alt="Photo of {{ item.title }}" >
+        <div class="info">
+          <h2 class="text-danger">{{ item.title}}</h2>
+          <h3 class="text-warning">{{ item.description }}</h3>
+        </div>
+      </a>
+    </li>
+  </ul>
+
+</section>

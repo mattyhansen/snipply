@@ -1,0 +1,15 @@
+[
+    {
+        "title":"Find All Links on a Page",
+        "category":"php",
+        "description":"Here's the basic principal behind spiders.",
+        "content":"$html = file_get_contents('http://www.example.com');\n\n$dom = new DOMDocument();\n@$dom->loadHTML($html);\n\n#grab all the links on the page\n$xpath = new DOMXPath($dom);\n$hrefs = $xpath->evaluate('/html/body//a');\n\nfor ($i = 0; $i < $hrefs->length; $i++) {\n    $href = $hrefs->item($i);\n    $url = $href->getAttribute('href');\n    echo $url.'<br />';\n}"
+    },
+    {
+        "title":"Detect AJAX Request",
+        "category":"php",
+        "description":"Using the HTTP_X_REQUESTED_WITH",
+        "content":"if (strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest' ) {\n    # Ex. check the query and serve requested data\n}"
+    }
+]
+

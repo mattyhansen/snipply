@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="snippyApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Snipply.io</title>
+
+  <!-- angularJS -->
+  <script src="vendor/angular/angular.js"></script>
+  <script src="vendor/angular/angular-route.js"></script>
+  <script src="vendor/angular/angular-animate.js"></script>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="vendor/bootswatch/darkly/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-theme.min.css">
+  <!--<script src="vendor/bootstrap/js/bootstrap.min.js"></script>-->
+
+  <!-- prism -->
+  <script src="vendor/prism/prism.js"></script>
+  <link rel="stylesheet" href="vendor/prism/prism.css">
+
+  <script src="app/scripts/app.js"></script>
+  <script src="app/scripts/controllers/SnippetController.js"></script>
+  <link rel="stylesheet" href="app/styles/main.css">
+
+</head>
+<body>
+  <div class="main {{ bodyClass }}" ng-view></div>
+</body>
+</html>

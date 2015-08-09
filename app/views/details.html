@@ -1,0 +1,16 @@
+<section class="snippetinfo">
+  <div class="snippet cf" ng-model="snippets">
+
+    <h1>{{ snippets[whichItem].title }}</h1>
+    <div class="info">
+      <h3>{{ snippets[whichItem].description }}</h3>
+      <!--<img ng-src="app/images/category-{{ snippets[whichItem].category }}.png" alt="Photo of {{ snippets[whichItem].title }}" />-->
+      <div class="">
+        <pre nag-prism source="{{ snippets[whichItem].content }}" class="language-{{ snippets[whichItem].category }}"></pre>
+      </div>
+    </div>
+  </div>
+  <a href="#/details/{{ prevItem }}" class="btn btn-info">&lt; left</a>
+  <a href="#/details/{{ nextItem }}" class="btn btn-info">&gt; right</a>
+  <a href="index.html" class="btn btn-danger">&laquo; Back to search</a>
+</section>
